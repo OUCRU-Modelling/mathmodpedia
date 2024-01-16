@@ -1,0 +1,26 @@
+# Basic concepts of modelling
+
+## The 3 purposes of modelling[@tredennick2021]
+
+### 1. Exploration
+
+**Exploration** is to identify patterns in the data and generate hypotheses (then we use **inference** to test these hypotheses). While scientific methods emphasize hypothesis testing, it is often unclear where these hypotheses come from. They can come from theory, but more often, they from observed patterns in the data.
+
+In **exploration**, we calculate descriptive statistics, check correlations or make visualisations to understand the data.
+
+### 2 and 3. Inference and Prediction
+
+Consider a regression model,
+
+$$\hat{y} = X \hat{\beta}$$
+
+of which $\hat{y}$ is a vector of predicted response, $X$ is the data matrix, $\hat{\beta}$ is a vector of parameters.
+
+**Inference** is about $\hat{\beta}$, to answer these questions:
+
+-   Which coefficients are non-zero, implying meaningful associations between covariates and the response?
+-   Which non-zero effects are positive, and which are negative?
+
+We model using a small fraction sampling from the population, and try to draw some statements about the whole population. In **inference**, we estimate parameters or conduct hypothesis testing.
+
+**Prediction** is about $\hat{y}$. In **prediction**, the key goal is to find a model that can ***accurately predict*** y for new observations of $X$.
